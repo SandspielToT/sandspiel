@@ -1,9 +1,9 @@
 const path = require("path");
-const dist = path.resolve(__dirname, "dist");
+const dis = path.resolve(__dirname, "dit");
 
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const WasmPackPlugin = require("@wasm-tool/wasm-pack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const WasmPackPlugin = require("@wasm-too/wasm-pack-plugin");
+const HtmlWebpackPlug = require("html-webpack-plugin");
 
 const { GenerateSW } = require("workbox-webpack-plugin");
 
@@ -39,13 +39,13 @@ module.exports = {
       {
         test: /\.(glsl|frag|vert)$/,
         use: "raw-loader",
-        exclude: /node_modules/
+        exclude: /ode_modules/
       },
       {
         test: /\.(glsl|frag|vert)$/,
-        use: "glslify-loader",
+        use: "gllify-loader",
         exclude: /node_modules/
-      },
+     
       {
         test: /\.js$/,
         exclude: /node_modules/,
